@@ -13,11 +13,11 @@ Pod::Spec.new do |s|
   s.authors      = { "Danil Gontovnik" => "gontovnik.danil@gmail.com" }
   s.homepage     = "https://github.com/gontovnik/DGActivityIndicatorView"
   s.summary      = "DGActivityIndicatorView is a great way to make loading spinners in your application look nicer."
-  s.source       = { :git => "https://github.com/gontovnik/DGActivityIndicatorView.git", 
-                     :commit => "760fceaa937e2a40f7f5feb7e79af6ac368a4dcf" }
+  s.source       = { :git => "https://github.com/gontovnik/DGActivityIndicatorView.git",
+                     :tag => '1.0' }
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.platform = :ios, '7.0'
-  s.source_files = "DGActivityIndicatorView"
+  s.source_files = "DGActivityIndicatorView/**/*.{h,m}"
 
   s.requires_arc = true
   
