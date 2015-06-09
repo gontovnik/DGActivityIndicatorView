@@ -15,6 +15,27 @@ Open and run the DGActivityIndicatorExample project in Xcode to see DGActivityIn
 
 ## Installation
 
+### Cocoapods
+
+Install Cocoapods if it is not installed yet:
+
+``` bash
+$ [sudo] gem install cocoapods
+$ pod setup
+```
+
+Add DGActivityIndicatorView to Podfile:
+
+``` bash
+pod 'DGActivityIndicatorView'
+```
+
+Call 'pod install':
+
+``` bash
+pod install
+```
+
 ### Manual install
 
 All you need to do is drop DGActivityIndicatorView folder into your project and include headers.
