@@ -14,7 +14,8 @@ typedef NS_ENUM(NSUInteger, DGActivityIndicatorAnimationType) {
     DGActivityIndicatorAnimationTypeFiveDots,
     DGActivityIndicatorAnimationTypeRotatingSquares,
     DGActivityIndicatorAnimationTypeDoubleBounce,
-    DGActivityIndicatorAnimationTypeTwoDots
+    DGActivityIndicatorAnimationTypeTwoDots,
+    DGActivityIndicatorAnimationTypeThreeDots
 };
 
 @interface DGActivityIndicatorView : UIView

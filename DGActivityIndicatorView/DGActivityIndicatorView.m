@@ -14,6 +14,7 @@
 #import "DGActivityIndicatorRotatingSquaresAnimation.h"
 #import "DGActivityIndicatorDoubleBounceAnimation.h"
 #import "DGActivityIndicatorTwoDotsAnimation.h"
+#import "DGActivityIndicatorThreeDotsAnimation.h"
 
 static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
 
@@ -113,6 +114,8 @@ static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
             return [[DGActivityIndicatorDoubleBounceAnimation alloc] init];
         case DGActivityIndicatorAnimationTypeTwoDots:
             return [[DGActivityIndicatorTwoDotsAnimation alloc] init];
+        case DGActivityIndicatorAnimationTypeThreeDots:
+            return [[DGActivityIndicatorThreeDotsAnimation alloc] init];
     }
     return nil;
 }
