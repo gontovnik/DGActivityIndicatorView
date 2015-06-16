@@ -19,6 +19,7 @@
 		053EEDEA1B1A4A640042C92B /* DGActivityIndicatorTriplePulseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 053EEDE01B1A4A640042C92B /* DGActivityIndicatorTriplePulseAnimation.m */; };
 		053EEDEB1B1A4A640042C92B /* DGActivityIndicatorTwoDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 053EEDE21B1A4A640042C92B /* DGActivityIndicatorTwoDotsAnimation.m */; };
 		053EEDEC1B1A4A640042C92B /* DGActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 053EEDE51B1A4A640042C92B /* DGActivityIndicatorView.m */; };
+		235E0E811B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 235E0E801B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		053EEDE31B1A4A640042C92B /* DGActivityIndicatorAnimationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorAnimationProtocol.h; sourceTree = "<group>"; };
 		053EEDE41B1A4A640042C92B /* DGActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorView.h; sourceTree = "<group>"; };
 		053EEDE51B1A4A640042C92B /* DGActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorView.m; sourceTree = "<group>"; };
+		235E0E7F1B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorThreeDotsAnimation.h; sourceTree = "<group>"; };
+		235E0E801B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorThreeDotsAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 				053EEDE01B1A4A640042C92B /* DGActivityIndicatorTriplePulseAnimation.m */,
 				053EEDE11B1A4A640042C92B /* DGActivityIndicatorTwoDotsAnimation.h */,
 				053EEDE21B1A4A640042C92B /* DGActivityIndicatorTwoDotsAnimation.m */,
+				235E0E7F1B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.h */,
+				235E0E801B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.m */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				053EEDE71B1A4A640042C92B /* DGActivityIndicatorFiveDotsAnimation.m in Sources */,
+				235E0E811B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.m in Sources */,
 				05257DA71B10E796006354A6 /* ViewController.m in Sources */,
 				053EEDEC1B1A4A640042C92B /* DGActivityIndicatorView.m in Sources */,
 				053EEDEA1B1A4A640042C92B /* DGActivityIndicatorTriplePulseAnimation.m in Sources */,
