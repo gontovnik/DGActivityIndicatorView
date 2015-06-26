@@ -52,7 +52,7 @@
 
         CATransform3D t1 = CATransform3DMakeTranslation(pointB.x - pointA.x, pointB.y - pointA.y, 0.0f);
 
-        CATransform3D t2 = CATransform3DTranslate(t1, pointC.x - pointB.x, pointC.y - pointB.y, 0.0f);
+        CATransform3D t2 = CATransform3DMakeTranslation(pointC.x - pointA.x, pointC.y - pointA.y, 0.0f);
         
         CATransform3D t3 = CATransform3DMakeTranslation(0.0f, 0.0f, 0.0f);
 
