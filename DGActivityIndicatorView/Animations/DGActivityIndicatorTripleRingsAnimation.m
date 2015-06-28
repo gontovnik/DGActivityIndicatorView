@@ -16,7 +16,7 @@
 - (void)setupAnimationInLayer:(CALayer *)layer withSize:(CGSize)size tintColor:(UIColor *)tintColor {
     NSTimeInterval beginTime = CACurrentMediaTime();
     
-    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, size.width, size.width)];
+    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0.0f, 0.0f, size.width, size.width)];
     CGFloat oX = (layer.bounds.size.width - size.width) / 2.0f;
     CGFloat oY = (layer.bounds.size.height - size.height) / 2.0f;
     for (int i = 0; i < 3; i++) {

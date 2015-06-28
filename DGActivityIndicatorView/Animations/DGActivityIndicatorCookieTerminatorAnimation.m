@@ -58,7 +58,7 @@
     CGFloat cookiePadding = cookieSize * 2.0f;
     for (int i = 0; i < 3; i++) {
         CALayer *cookieLayer = [CALayer layer];
-        cookieLayer.frame = CGRectMake(cookieTerminatorCenter.x + (cookieSize + cookiePadding) * 3 - cookieTerminatorSize, oY - cookieSize / 2.0f, cookieSize, cookieSize);
+        cookieLayer.frame = CGRectMake(cookieTerminatorCenter.x + (cookieSize + cookiePadding) * 3.0f - cookieTerminatorSize, oY - cookieSize / 2.0f, cookieSize, cookieSize);
         cookieLayer.backgroundColor = tintColor.CGColor;
         cookieLayer.anchorPoint = CGPointMake(0.5f, 0.5f);
         cookieLayer.opacity = 1.0f;
@@ -69,7 +69,7 @@
         transformAnimation.duration = 1.8f;
         transformAnimation.beginTime = beginTime - (i * transformAnimation.duration / 3.0f);
         transformAnimation.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeTranslation(0.0f, 0.0f, 0.0f)];
-        transformAnimation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeTranslation(-3 * (cookieSize + cookiePadding), 0, 0)];
+        transformAnimation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeTranslation(-3.0f * (cookieSize + cookiePadding), 0.0f, 0.0f)];
         transformAnimation.repeatCount = HUGE_VALF;
         transformAnimation.timingFunction = [CAMediaTimingFunction functionWithName: kCAMediaTimingFunctionLinear];
         
