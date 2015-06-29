@@ -9,13 +9,14 @@
 #import "DGActivityIndicatorCookieTerminatorAnimation.h"
 
 @implementation DGActivityIndicatorCookieTerminatorAnimation
+
 #pragma mark -
 #pragma mark DGActivityIndicatorAnimation Protocol
 
 - (void)setupAnimationInLayer:(CALayer *)layer withSize:(CGSize)size tintColor:(UIColor *)tintColor {
     NSTimeInterval beginTime = CACurrentMediaTime();
     
-    CGFloat cookieTerminatorSize =  size.width / 3.0f;
+    CGFloat cookieTerminatorSize =  ceilf(size.width / 3.0f);
     CGFloat oX = (layer.bounds.size.width - size.width) / 2.0f;
     CGFloat oY = layer.bounds.size.height / 2.0f;
     CGPoint cookieTerminatorCenter = CGPointMake(oX, oY);
@@ -55,7 +56,7 @@
         [jawLayer addAnimation:transformAnimation forKey:@"animation"];
     }
     
-    CGFloat cookieSize = size.width / 6.0f;
+    CGFloat cookieSize = ceilf(size.width / 6.0f);
     CGFloat cookiePadding = cookieSize * 2.0f;
     for (int i = 0; i < 3; i++) {
         CALayer *cookieLayer = [CALayer layer];
@@ -63,7 +64,6 @@
         cookieLayer.backgroundColor = tintColor.CGColor;
         cookieLayer.anchorPoint = CGPointMake(0.5f, 0.5f);
         cookieLayer.opacity = 1.0f;
-        cookieLayer.shouldRasterize = YES;
         cookieLayer.cornerRadius = cookieSize / 2.0f;
         
         CABasicAnimation *transformAnimation = [CABasicAnimation animationWithKeyPath:@"transform"];
