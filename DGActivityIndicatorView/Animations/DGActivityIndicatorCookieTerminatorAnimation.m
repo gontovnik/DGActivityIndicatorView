@@ -42,6 +42,7 @@
         jawLayer.transform = CATransform3DMakeRotation((1.0f - 2.0f * i) * M_PI_4, 0.0f, 0.0f, 1.0f);
         
         CABasicAnimation *transformAnimation = [CABasicAnimation animationWithKeyPath:@"transform"];
+        transformAnimation.removedOnCompletion = NO;
         transformAnimation.beginTime = beginTime;
         transformAnimation.duration = 0.3f;
         transformAnimation.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation((1.0f - 2.0f * i) * M_PI_4, 0.0f, 0.0f, 1.0f)];
@@ -71,6 +72,7 @@
         transformAnimation.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeTranslation(0.0f, 0.0f, 0.0f)];
         transformAnimation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeTranslation(-3.0f * (cookieSize + cookiePadding), 0.0f, 0.0f)];
         transformAnimation.repeatCount = HUGE_VALF;
+        transformAnimation.removedOnCompletion = NO;
         transformAnimation.timingFunction = [CAMediaTimingFunction functionWithName: kCAMediaTimingFunctionLinear];
         
         [layer addSublayer:cookieLayer];
