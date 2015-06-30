@@ -19,6 +19,7 @@
 #import "DGActivityIndicatorRotatingTrigonAnimation.h"
 #import "DGActivityIndicatorTripleRingsAnimation.h"
 #import "DGActivityIndicatorCookieTerminatorAnimation.h"
+#import "DGActivityIndicatorEightDotsAnimation.h"
 
 static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
 
@@ -128,6 +129,8 @@ static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
             return [[DGActivityIndicatorTripleRingsAnimation alloc]init];
         case DGActivityIndicatorAnimationTypeCookieTerminator:
             return [[DGActivityIndicatorCookieTerminatorAnimation alloc]init];
+        case DGActivityIndicatorAnimationTypeEightDots:
+            return [[DGActivityIndicatorEightDotsAnimation alloc]init];
             
             
     }

@@ -20,6 +20,7 @@
 		053EEDEB1B1A4A640042C92B /* DGActivityIndicatorTwoDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 053EEDE21B1A4A640042C92B /* DGActivityIndicatorTwoDotsAnimation.m */; };
 		053EEDEC1B1A4A640042C92B /* DGActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 053EEDE51B1A4A640042C92B /* DGActivityIndicatorView.m */; };
 		235E0E811B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 235E0E801B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.m */; };
+		D6628CF91B42F1CB00EFFD0C /* DGActivityIndicatorEightDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D6628CF81B42F1CB00EFFD0C /* DGActivityIndicatorEightDotsAnimation.m */; };
 		D6668F941B3D6AF900074EA6 /* DGActivityIndicatorRotatingSandglassAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D6668F931B3D6AF900074EA6 /* DGActivityIndicatorRotatingSandglassAnimation.m */; };
 		D6668F971B3D6B0000074EA6 /* DGActivityIndicatorRotatingTrigonAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D6668F961B3D6B0000074EA6 /* DGActivityIndicatorRotatingTrigonAnimation.m */; };
 		D6D6C9911B3FC4D40096998F /* DGActivityIndicatorTripleRingsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D6C9901B3FC4D40096998F /* DGActivityIndicatorTripleRingsAnimation.m */; };
@@ -65,6 +66,8 @@
 		053EEDE51B1A4A640042C92B /* DGActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorView.m; sourceTree = "<group>"; };
 		235E0E7F1B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorThreeDotsAnimation.h; sourceTree = "<group>"; };
 		235E0E801B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorThreeDotsAnimation.m; sourceTree = "<group>"; };
+		D6628CF71B42F1CB00EFFD0C /* DGActivityIndicatorEightDotsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorEightDotsAnimation.h; sourceTree = "<group>"; };
+		D6628CF81B42F1CB00EFFD0C /* DGActivityIndicatorEightDotsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorEightDotsAnimation.m; sourceTree = "<group>"; };
 		D6668F921B3D6AF900074EA6 /* DGActivityIndicatorRotatingSandglassAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorRotatingSandglassAnimation.h; sourceTree = "<group>"; };
 		D6668F931B3D6AF900074EA6 /* DGActivityIndicatorRotatingSandglassAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorRotatingSandglassAnimation.m; sourceTree = "<group>"; };
 		D6668F951B3D6B0000074EA6 /* DGActivityIndicatorRotatingTrigonAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorRotatingTrigonAnimation.h; sourceTree = "<group>"; };
@@ -177,6 +180,8 @@
 				D6668F931B3D6AF900074EA6 /* DGActivityIndicatorRotatingSandglassAnimation.m */,
 				D6668F951B3D6B0000074EA6 /* DGActivityIndicatorRotatingTrigonAnimation.h */,
 				D6668F961B3D6B0000074EA6 /* DGActivityIndicatorRotatingTrigonAnimation.m */,
+				D6628CF71B42F1CB00EFFD0C /* DGActivityIndicatorEightDotsAnimation.h */,
+				D6628CF81B42F1CB00EFFD0C /* DGActivityIndicatorEightDotsAnimation.m */,
 				053EEDDF1B1A4A640042C92B /* DGActivityIndicatorTriplePulseAnimation.h */,
 				053EEDE01B1A4A640042C92B /* DGActivityIndicatorTriplePulseAnimation.m */,
 				D6D6C98F1B3FC4D40096998F /* DGActivityIndicatorTripleRingsAnimation.h */,
@@ -291,6 +296,7 @@
 			files = (
 				053EEDE71B1A4A640042C92B /* DGActivityIndicatorFiveDotsAnimation.m in Sources */,
 				235E0E811B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.m in Sources */,
+				D6628CF91B42F1CB00EFFD0C /* DGActivityIndicatorEightDotsAnimation.m in Sources */,
 				05257DA71B10E796006354A6 /* ViewController.m in Sources */,
 				D6668F941B3D6AF900074EA6 /* DGActivityIndicatorRotatingSandglassAnimation.m in Sources */,
 				053EEDEC1B1A4A640042C92B /* DGActivityIndicatorView.m in Sources */,

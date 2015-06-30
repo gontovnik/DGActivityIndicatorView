@@ -19,7 +19,8 @@ typedef NS_ENUM(NSUInteger, DGActivityIndicatorAnimationType) {
     DGActivityIndicatorAnimationTypeRotatingSandglass,
     DGActivityIndicatorAnimationTypeRotatingTrigons,
     DGActivityIndicatorAnimationTypeTripleRings,
-    DGActivityIndicatorAnimationTypeCookieTerminator
+    DGActivityIndicatorAnimationTypeCookieTerminator,
+    DGActivityIndicatorAnimationTypeEightDots
 };
 
 @interface DGActivityIndicatorView : UIView

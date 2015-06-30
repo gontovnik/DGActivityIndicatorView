@@ -26,13 +26,14 @@
                                @(DGActivityIndicatorAnimationTypeRotatingSandglass),
                                @(DGActivityIndicatorAnimationTypeRotatingTrigons),
                                @(DGActivityIndicatorAnimationTypeTripleRings),
-                               @(DGActivityIndicatorAnimationTypeCookieTerminator)];
+                               @(DGActivityIndicatorAnimationTypeCookieTerminator),
+                               @(DGActivityIndicatorAnimationTypeEightDots)];
     NSArray *sizes = @[@(35.0f), @(40.0f),
                        @(35.0f), @(40.0f),
                        @(40.0f), @(20.0f),
                        @(40.0f), @(40.0f),
                        @(40.0f), @(40.0f),
-                       @(35.0f)];
+                       @(35.0f), @(40.0f)];
     for (int i = 0; i < activityTypes.count; i++) {
         DGActivityIndicatorView *activityIndicatorView = [[DGActivityIndicatorView alloc] initWithType:(DGActivityIndicatorAnimationType)[activityTypes[i] integerValue] tintColor:[UIColor whiteColor] size:[sizes[i] floatValue]];
         
