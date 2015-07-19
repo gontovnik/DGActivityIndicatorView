@@ -17,26 +17,15 @@
     CGFloat y = (layer.bounds.size.height - circleSize) / 2;
     CGFloat duration = 0.75f;
     NSArray *timeBegins = @[@0.12f, @0.24f, @0.36f];
+    CAMediaTimingFunction *timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.2f :0.68f :0.18f :1.08f];
     
-    //    Scale animation
-    CAKeyframeAnimation *scaleAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
     
-    scaleAnimation.values = @[[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0f, 1.0f, 1.0f)],
-                                [NSValue valueWithCATransform3D:CATransform3DMakeScale(0.1f, 0.1f, 1.0f)],
+    animation.values = @[[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0f, 1.0f, 1.0f)],
+                                [NSValue valueWithCATransform3D:CATransform3DMakeScale(0.3f, 0.3f, 1.0f)],
                                 [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0f, 1.0f, 1.0f)]];
-    scaleAnimation.keyTimes = @[@0.0f, @0.45f, @0.8f];
-    
-    // Opacity animation
-    CAKeyframeAnimation *opacityAnimation = [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
-    
-    opacityAnimation.values = @[@1.0f, @0.7f, @1.0f];
-    opacityAnimation.keyTimes = scaleAnimation.keyTimes;
-    
-    // Animation
-    CAAnimationGroup *animation = [CAAnimationGroup animation];
-    
-    animation.animations = @[scaleAnimation, opacityAnimation];
-    animation.timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.2f :0.68f :0.18f :1.08f];
+    animation.keyTimes = @[@0.0f, @0.3f, @1.0f];
+    animation.timingFunctions = @[timingFunction, timingFunction];
     animation.duration = duration;
     animation.repeatCount = HUGE_VALF;
     
@@ -44,7 +33,6 @@
         CALayer *circle = [CALayer layer];
         
         circle.frame = CGRectMake(x + i * circleSize + i * circlePadding, y, circleSize, circleSize);
-        circle.anchorPoint = CGPointMake(0.5f, 0.5f);
         circle.backgroundColor = tintColor.CGColor;
         circle.cornerRadius = circle.bounds.size.width / 2;
         animation.beginTime = [timeBegins[i] floatValue];
