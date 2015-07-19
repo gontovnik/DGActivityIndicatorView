@@ -64,9 +64,9 @@
         CAShapeLayer *circle = [CAShapeLayer layer];
         UIBezierPath *circlePath = [UIBezierPath bezierPath];
         
-        [circlePath addArcWithCenter:CGPointMake(circleSize / 2, circleSize / 2) radius:circleSize / 2 startAngle:1.5 * M_PI endAngle:0 clockwise:true];
-        [circlePath moveToPoint:CGPointMake(circleSize / 2, circleSize)];
-        [circlePath addArcWithCenter:CGPointMake(circleSize / 2, circleSize / 2) radius:circleSize / 2 startAngle:M_PI_2 endAngle:M_PI clockwise:true];
+        [circlePath addArcWithCenter:CGPointMake(circleSize / 2, circleSize / 2) radius:circleSize / 2 startAngle:-3 * M_PI / 4 endAngle:-M_PI / 4 clockwise:true];
+        [circlePath moveToPoint:CGPointMake(circleSize / 2 - circleSize / 2 * cosf(M_PI / 4), circleSize / 2 + circleSize / 2 * sinf(M_PI / 4))];
+        [circlePath addArcWithCenter:CGPointMake(circleSize / 2, circleSize / 2) radius:circleSize / 2 startAngle:-5 * M_PI / 4 endAngle:-7 * M_PI / 4 clockwise:false];
         circle.path = circlePath.CGPath;
         circle.lineWidth = 2;
         circle.fillColor = nil;
