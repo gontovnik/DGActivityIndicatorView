@@ -17,6 +17,7 @@
 #import "DGActivityIndicatorThreeDotsAnimation.h"
 #import "DGActivityIndicatorBallPulseAnimation.h"
 #import "DGActivityIndicatorBallClipRotateAnimation.h"
+#import "DGActivityIndicatorBallClipRotatePulseAnimation.h"
 
 static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
 
@@ -122,6 +123,8 @@ static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
             return [[DGActivityIndicatorBallPulseAnimation alloc] init];
         case DGActivityIndicatorAnimationTypeBallClipRotate:
             return [[DGActivityIndicatorBallClipRotateAnimation alloc] init];
+        case DGActivityIndicatorAnimationTypeBallClipRotatePulse:
+            return [[DGActivityIndicatorBallClipRotatePulseAnimation alloc] init];
     }
     return nil;
 }
