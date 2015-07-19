@@ -18,7 +18,8 @@ typedef NS_ENUM(NSUInteger, DGActivityIndicatorAnimationType) {
     DGActivityIndicatorAnimationTypeThreeDots,
     DGActivityIndicatorAnimationTypeBallPulse,
     DGActivityIndicatorAnimationTypeBallClipRotate,
-    DGActivityIndicatorAnimationTypeBallClipRotatePulse
+    DGActivityIndicatorAnimationTypeBallClipRotatePulse,
+    DGActivityIndicatorAnimationTypeBallClipRotateMultiple
 };
 
 @interface DGActivityIndicatorView : UIView
