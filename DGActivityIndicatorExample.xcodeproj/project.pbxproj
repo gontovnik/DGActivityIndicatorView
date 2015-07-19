@@ -20,6 +20,7 @@
 		053EEDEB1B1A4A640042C92B /* DGActivityIndicatorTwoDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 053EEDE21B1A4A640042C92B /* DGActivityIndicatorTwoDotsAnimation.m */; };
 		053EEDEC1B1A4A640042C92B /* DGActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 053EEDE51B1A4A640042C92B /* DGActivityIndicatorView.m */; };
 		235E0E811B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 235E0E801B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.m */; };
+		23FDAB411B5B8ED3000F636A /* DGActivityIndicatorBallPulseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FDAB401B5B8ED3000F636A /* DGActivityIndicatorBallPulseAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		053EEDE51B1A4A640042C92B /* DGActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorView.m; sourceTree = "<group>"; };
 		235E0E7F1B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorThreeDotsAnimation.h; sourceTree = "<group>"; };
 		235E0E801B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorThreeDotsAnimation.m; sourceTree = "<group>"; };
+		23FDAB3F1B5B8ED3000F636A /* DGActivityIndicatorBallPulseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallPulseAnimation.h; sourceTree = "<group>"; };
+		23FDAB401B5B8ED3000F636A /* DGActivityIndicatorBallPulseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallPulseAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,8 @@
 				053EEDE21B1A4A640042C92B /* DGActivityIndicatorTwoDotsAnimation.m */,
 				235E0E7F1B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.h */,
 				235E0E801B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.m */,
+				23FDAB3F1B5B8ED3000F636A /* DGActivityIndicatorBallPulseAnimation.h */,
+				23FDAB401B5B8ED3000F636A /* DGActivityIndicatorBallPulseAnimation.m */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 				05257DA41B10E796006354A6 /* AppDelegate.m in Sources */,
 				05257DA11B10E796006354A6 /* main.m in Sources */,
 				053EEDE91B1A4A640042C92B /* DGActivityIndicatorRotatingSquaresAnimation.m in Sources */,
+				23FDAB411B5B8ED3000F636A /* DGActivityIndicatorBallPulseAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
