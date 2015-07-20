@@ -29,7 +29,8 @@
                                @(DGActivityIndicatorAnimationTypeBallClipRotateMultiple),
                                @(DGActivityIndicatorAnimationTypeBallRotate),
                                @(DGActivityIndicatorAnimationTypeBallZigZag),
-                               @(DGActivityIndicatorAnimationTypeBallZigZagDeflect)];
+                               @(DGActivityIndicatorAnimationTypeBallZigZagDeflect),
+                               @(DGActivityIndicatorAnimationTypeBallTrianglePath)];
     
     for (int i = 0; i < activityTypes.count; i++) {
         DGActivityIndicatorView *activityIndicatorView = [[DGActivityIndicatorView alloc] initWithType:(DGActivityIndicatorAnimationType)[activityTypes[i] integerValue] tintColor:[UIColor whiteColor]];
