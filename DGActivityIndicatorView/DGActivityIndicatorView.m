@@ -35,6 +35,7 @@
 #import "DGActivityIndicatorBallScaleRippleMultipleAnimation.h"
 #import "DGActivityIndicatorTriangleSkewSpinAnimation.h"
 #import "DGActivityIndicatorBallGridBeatAnimation.h"
+#import "DGActivityIndicatorBallGridPulseAnimation.h"
 
 static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
 
@@ -176,6 +177,8 @@ static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
             return [[DGActivityIndicatorTriangleSkewSpinAnimation alloc] init];
         case DGActivityIndicatorAnimationTypeBallGridBeat:
             return [[DGActivityIndicatorBallGridBeatAnimation alloc] init];
+        case DGActivityIndicatorAnimationTypeBallGridPulse:
+            return [[DGActivityIndicatorBallGridPulseAnimation alloc] init];
     }
     return nil;
 }
