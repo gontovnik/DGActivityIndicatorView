@@ -28,6 +28,7 @@
 #import "DGActivityIndicatorLineScalePartyAnimation.h"
 #import "DGActivityIndicatorBallScaleMultipleAnimation.h"
 #import "DGActivityIndicatorBallPulseSyncAnimation.h"
+#import "DGActivityIndicatorBallBeatAnimation.h"
 
 static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
 
@@ -155,6 +156,8 @@ static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
             return [[DGActivityIndicatorBallScaleMultipleAnimation alloc] init];
         case DGActivityIndicatorAnimationTypeBallPulseSync:
             return [[DGActivityIndicatorBallPulseSyncAnimation alloc] init];
+        case DGActivityIndicatorAnimationTypeBallBeat:
+            return [[DGActivityIndicatorBallBeatAnimation alloc] init];
     }
     return nil;
 }
