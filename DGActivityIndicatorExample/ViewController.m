@@ -27,15 +27,11 @@
                                @(DGActivityIndicatorAnimationTypeBallClipRotate),
                                @(DGActivityIndicatorAnimationTypeBallClipRotatePulse),
                                @(DGActivityIndicatorAnimationTypeBallClipRotateMultiple),
-                               @(DGActivityIndicatorAnimationTypeBallRotate)];
-    NSArray *sizes = @[@(40.0f), @(40.0f),
-                       @(35.0f), @(40.0f),
-                       @(40.0f), @(20.0f),
-                       @(40.0f), @(40.0f),
-                       @(40.0f), @(40.0f),
-                       @(40.0f), @(40.0f)];
+                               @(DGActivityIndicatorAnimationTypeBallRotate),
+                               @(DGActivityIndicatorAnimationTypeBallZigZag)];
+    
     for (int i = 0; i < activityTypes.count; i++) {
-        DGActivityIndicatorView *activityIndicatorView = [[DGActivityIndicatorView alloc] initWithType:(DGActivityIndicatorAnimationType)[activityTypes[i] integerValue] tintColor:[UIColor whiteColor] size:[sizes[i] floatValue]];
+        DGActivityIndicatorView *activityIndicatorView = [[DGActivityIndicatorView alloc] initWithType:(DGActivityIndicatorAnimationType)[activityTypes[i] integerValue] tintColor:[UIColor whiteColor]];
         
         CGFloat width = self.view.bounds.size.width / 4.0f;
         CGFloat height = self.view.bounds.size.height / 4.0f;
