@@ -22,6 +22,7 @@
 #import "DGActivityIndicatorBallRotateAnimation.h"
 #import "DGActivityIndicatorBallZigZagAnimation.h"
 #import "DGActivityIndicatorBallZigZagDeflectAnimation.h"
+#import "DGActivityIndicatorBallTrianglePathAnimation.h"
 
 static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
 
@@ -137,6 +138,8 @@ static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
             return [[DGActivityIndicatorBallZigZagAnimation alloc] init];
         case DGActivityIndicatorAnimationTypeBallZigZagDeflect:
             return [[DGActivityIndicatorBallZigZagDeflectAnimation alloc] init];
+        case DGActivityIndicatorAnimationTypeBallTrianglePath:
+            return [[DGActivityIndicatorBallTrianglePathAnimation alloc] init];
     }
     return nil;
 }
