@@ -23,7 +23,8 @@ typedef NS_ENUM(NSUInteger, DGActivityIndicatorAnimationType) {
     DGActivityIndicatorAnimationTypeBallRotate,
     DGActivityIndicatorAnimationTypeBallZigZag,
     DGActivityIndicatorAnimationTypeBallZigZagDeflect,
-    DGActivityIndicatorAnimationTypeBallTrianglePath
+    DGActivityIndicatorAnimationTypeBallTrianglePath,
+    DGActivityIndicatorAnimationTypeBallScale
 };
 
 @interface DGActivityIndicatorView : UIView
