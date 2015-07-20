@@ -39,14 +39,15 @@
                                @(DGActivityIndicatorAnimationTypeBallBeat),
                                @(DGActivityIndicatorAnimationTypeLineScalePulseOut),
                                @(DGActivityIndicatorAnimationTypeLineScalePulseOutRapid),
-                               @(DGActivityIndicatorAnimationTypeBallScaleRipple)];
+                               @(DGActivityIndicatorAnimationTypeBallScaleRipple),
+                               @(DGActivityIndicatorAnimationTypeBallScaleRippleMultiple)];
     
     for (int i = 0; i < activityTypes.count; i++) {
         DGActivityIndicatorView *activityIndicatorView = [[DGActivityIndicatorView alloc] initWithType:(DGActivityIndicatorAnimationType)[activityTypes[i] integerValue] tintColor:[UIColor whiteColor]];
         
-        CGFloat width = self.view.bounds.size.width / 5.0f;
-        CGFloat height = self.view.bounds.size.height / 5.0f;
-        activityIndicatorView.frame = CGRectMake(width * (i % 5), height * (int)(i / 5), width, height);
+        CGFloat width = self.view.bounds.size.width / 6.0f;
+        CGFloat height = self.view.bounds.size.height / 6.0f;
+        activityIndicatorView.frame = CGRectMake(width * (i % 6), height * (int)(i / 6), width, height);
         
         [self.view addSubview:activityIndicatorView];
         
