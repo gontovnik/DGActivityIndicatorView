@@ -30,7 +30,8 @@ typedef NS_ENUM(NSUInteger, DGActivityIndicatorAnimationType) {
     DGActivityIndicatorAnimationTypeBallScaleMultiple,
     DGActivityIndicatorAnimationTypeBallPulseSync,
     DGActivityIndicatorAnimationTypeBallBeat,
-    DGActivityIndicatorAnimationTypeLineScalePulseOut
+    DGActivityIndicatorAnimationTypeLineScalePulseOut,
+    DGActivityIndicatorAnimationTypeLineScalePulseOutRapid
 };
 
 @interface DGActivityIndicatorView : UIView
