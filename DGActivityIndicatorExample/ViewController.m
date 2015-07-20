@@ -31,14 +31,15 @@
                                @(DGActivityIndicatorAnimationTypeBallZigZag),
                                @(DGActivityIndicatorAnimationTypeBallZigZagDeflect),
                                @(DGActivityIndicatorAnimationTypeBallTrianglePath),
-                               @(DGActivityIndicatorAnimationTypeBallScale)];
+                               @(DGActivityIndicatorAnimationTypeBallScale),
+                               @(DGActivityIndicatorAnimationTypeLineScale)];
     
     for (int i = 0; i < activityTypes.count; i++) {
         DGActivityIndicatorView *activityIndicatorView = [[DGActivityIndicatorView alloc] initWithType:(DGActivityIndicatorAnimationType)[activityTypes[i] integerValue] tintColor:[UIColor whiteColor]];
         
-        CGFloat width = self.view.bounds.size.width / 4.0f;
-        CGFloat height = self.view.bounds.size.height / 4.0f;
-        activityIndicatorView.frame = CGRectMake(width * (i % 4), height * (int)(i / 4), width, height);
+        CGFloat width = self.view.bounds.size.width / 5.0f;
+        CGFloat height = self.view.bounds.size.height / 5.0f;
+        activityIndicatorView.frame = CGRectMake(width * (i % 5), height * (int)(i / 5), width, height);
         
         [self.view addSubview:activityIndicatorView];
         
