@@ -36,6 +36,10 @@
 		23413BD51B5D71B20014C2E8 /* DGActivityIndicatorBallGridBeatAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 23413BD41B5D71B20014C2E8 /* DGActivityIndicatorBallGridBeatAnimation.m */; };
 		23413BD81B5D75560014C2E8 /* DGActivityIndicatorBallGridPulseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 23413BD71B5D75560014C2E8 /* DGActivityIndicatorBallGridPulseAnimation.m */; };
 		235E0E811B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 235E0E801B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.m */; };
+		2370AB121B62CE9000D36684 /* DGActivityIndicatorCookieTerminatorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2370AB0B1B62CE9000D36684 /* DGActivityIndicatorCookieTerminatorAnimation.m */; };
+		2370AB131B62CE9000D36684 /* DGActivityIndicatorRotatingSandglassAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2370AB0D1B62CE9000D36684 /* DGActivityIndicatorRotatingSandglassAnimation.m */; };
+		2370AB141B62CE9000D36684 /* DGActivityIndicatorRotatingTrigonAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2370AB0F1B62CE9000D36684 /* DGActivityIndicatorRotatingTrigonAnimation.m */; };
+		2370AB151B62CE9000D36684 /* DGActivityIndicatorTripleRingsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2370AB111B62CE9000D36684 /* DGActivityIndicatorTripleRingsAnimation.m */; };
 		23D76E281B5BBBAC00CD3248 /* DGActivityIndicatorBallClipRotateAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D76E271B5BBBAC00CD3248 /* DGActivityIndicatorBallClipRotateAnimation.m */; };
 		23D76E2B1B5BD51400CD3248 /* DGActivityIndicatorBallClipRotatePulseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D76E2A1B5BD51400CD3248 /* DGActivityIndicatorBallClipRotatePulseAnimation.m */; };
 		23D76E311B5C2BF100CD3248 /* DGActivityIndicatorBallClipRotateMultipleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D76E301B5C2BF100CD3248 /* DGActivityIndicatorBallClipRotateMultipleAnimation.m */; };
@@ -114,6 +118,14 @@
 		23413BD71B5D75560014C2E8 /* DGActivityIndicatorBallGridPulseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallGridPulseAnimation.m; sourceTree = "<group>"; };
 		235E0E7F1B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorThreeDotsAnimation.h; sourceTree = "<group>"; };
 		235E0E801B2F440900450570 /* DGActivityIndicatorThreeDotsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorThreeDotsAnimation.m; sourceTree = "<group>"; };
+		2370AB0A1B62CE9000D36684 /* DGActivityIndicatorCookieTerminatorAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorCookieTerminatorAnimation.h; sourceTree = "<group>"; };
+		2370AB0B1B62CE9000D36684 /* DGActivityIndicatorCookieTerminatorAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorCookieTerminatorAnimation.m; sourceTree = "<group>"; };
+		2370AB0C1B62CE9000D36684 /* DGActivityIndicatorRotatingSandglassAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorRotatingSandglassAnimation.h; sourceTree = "<group>"; };
+		2370AB0D1B62CE9000D36684 /* DGActivityIndicatorRotatingSandglassAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorRotatingSandglassAnimation.m; sourceTree = "<group>"; };
+		2370AB0E1B62CE9000D36684 /* DGActivityIndicatorRotatingTrigonAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorRotatingTrigonAnimation.h; sourceTree = "<group>"; };
+		2370AB0F1B62CE9000D36684 /* DGActivityIndicatorRotatingTrigonAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorRotatingTrigonAnimation.m; sourceTree = "<group>"; };
+		2370AB101B62CE9000D36684 /* DGActivityIndicatorTripleRingsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorTripleRingsAnimation.h; sourceTree = "<group>"; };
+		2370AB111B62CE9000D36684 /* DGActivityIndicatorTripleRingsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorTripleRingsAnimation.m; sourceTree = "<group>"; };
 		23D76E261B5BBBAC00CD3248 /* DGActivityIndicatorBallClipRotateAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallClipRotateAnimation.h; sourceTree = "<group>"; };
 		23D76E271B5BBBAC00CD3248 /* DGActivityIndicatorBallClipRotateAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorBallClipRotateAnimation.m; sourceTree = "<group>"; };
 		23D76E291B5BD51400CD3248 /* DGActivityIndicatorBallClipRotatePulseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorBallClipRotatePulseAnimation.h; sourceTree = "<group>"; };
@@ -216,6 +228,14 @@
 		053EEDD61B1A4A640042C92B /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				2370AB0A1B62CE9000D36684 /* DGActivityIndicatorCookieTerminatorAnimation.h */,
+				2370AB0B1B62CE9000D36684 /* DGActivityIndicatorCookieTerminatorAnimation.m */,
+				2370AB0C1B62CE9000D36684 /* DGActivityIndicatorRotatingSandglassAnimation.h */,
+				2370AB0D1B62CE9000D36684 /* DGActivityIndicatorRotatingSandglassAnimation.m */,
+				2370AB0E1B62CE9000D36684 /* DGActivityIndicatorRotatingTrigonAnimation.h */,
+				2370AB0F1B62CE9000D36684 /* DGActivityIndicatorRotatingTrigonAnimation.m */,
+				2370AB101B62CE9000D36684 /* DGActivityIndicatorTripleRingsAnimation.h */,
+				2370AB111B62CE9000D36684 /* DGActivityIndicatorTripleRingsAnimation.m */,
 				23413BD61B5D75560014C2E8 /* DGActivityIndicatorBallGridPulseAnimation.h */,
 				23413BD71B5D75560014C2E8 /* DGActivityIndicatorBallGridPulseAnimation.m */,
 				23413BD31B5D71B20014C2E8 /* DGActivityIndicatorBallGridBeatAnimation.h */,
@@ -374,9 +394,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2370AB151B62CE9000D36684 /* DGActivityIndicatorTripleRingsAnimation.m in Sources */,
 				23D76E311B5C2BF100CD3248 /* DGActivityIndicatorBallClipRotateMultipleAnimation.m in Sources */,
 				053EEDE71B1A4A640042C92B /* DGActivityIndicatorFiveDotsAnimation.m in Sources */,
 				23413BD21B5D6A480014C2E8 /* DGActivityIndicatorTriangleSkewSpinAnimation.m in Sources */,
+				2370AB131B62CE9000D36684 /* DGActivityIndicatorRotatingSandglassAnimation.m in Sources */,
 				23D76E341B5CBBD700CD3248 /* DGActivityIndicatorBallRotateAnimation.m in Sources */,
 				23413BCF1B5D66D40014C2E8 /* DGActivityIndicatorBallScaleRippleMultipleAnimation.m in Sources */,
 				23413BD81B5D75560014C2E8 /* DGActivityIndicatorBallGridPulseAnimation.m in Sources */,
@@ -393,8 +415,10 @@
 				053EEDEB1B1A4A640042C92B /* DGActivityIndicatorTwoDotsAnimation.m in Sources */,
 				05257DA41B10E796006354A6 /* AppDelegate.m in Sources */,
 				05257DA11B10E796006354A6 /* main.m in Sources */,
+				2370AB121B62CE9000D36684 /* DGActivityIndicatorCookieTerminatorAnimation.m in Sources */,
 				23413BB11B5CE78D0014C2E8 /* DGActivityIndicatorBallTrianglePathAnimation.m in Sources */,
 				053EEDE91B1A4A640042C92B /* DGActivityIndicatorRotatingSquaresAnimation.m in Sources */,
+				2370AB141B62CE9000D36684 /* DGActivityIndicatorRotatingTrigonAnimation.m in Sources */,
 				23FDAB411B5B8ED3000F636A /* DGActivityIndicatorBallPulseAnimation.m in Sources */,
 				23413BB71B5D11160014C2E8 /* DGActivityIndicatorLineScaleAnimation.m in Sources */,
 				23D76E2B1B5BD51400CD3248 /* DGActivityIndicatorBallClipRotatePulseAnimation.m in Sources */,

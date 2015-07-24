@@ -36,6 +36,10 @@
 #import "DGActivityIndicatorTriangleSkewSpinAnimation.h"
 #import "DGActivityIndicatorBallGridBeatAnimation.h"
 #import "DGActivityIndicatorBallGridPulseAnimation.h"
+#import "DGActivityIndicatorRotatingSandglassAnimation.h"
+#import "DGActivityIndicatorRotatingTrigonAnimation.h"
+#import "DGActivityIndicatorTripleRingsAnimation.h"
+#import "DGActivityIndicatorCookieTerminatorAnimation.h"
 
 static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
 
@@ -179,6 +183,14 @@ static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
             return [[DGActivityIndicatorBallGridBeatAnimation alloc] init];
         case DGActivityIndicatorAnimationTypeBallGridPulse:
             return [[DGActivityIndicatorBallGridPulseAnimation alloc] init];
+        case DGActivityIndicatorAnimationTypeRotatingSandglass:
+            return [[DGActivityIndicatorRotatingSandglassAnimation alloc]init];
+        case DGActivityIndicatorAnimationTypeRotatingTrigons:
+            return [[DGActivityIndicatorRotatingTrigonAnimation alloc]init];
+        case DGActivityIndicatorAnimationTypeTripleRings:
+            return [[DGActivityIndicatorTripleRingsAnimation alloc]init];
+        case DGActivityIndicatorAnimationTypeCookieTerminator:
+            return [[DGActivityIndicatorCookieTerminatorAnimation alloc]init];
     }
     return nil;
 }
