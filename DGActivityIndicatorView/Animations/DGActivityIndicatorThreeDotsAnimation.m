@@ -41,18 +41,19 @@
         
         opacityAnimation.values = @[@(0.25f), @(1.0f)];
         
-        CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
+        CAAnimationGroup *animation = [CAAnimationGroup animation];
         
-        animationGroup.removedOnCompletion = NO;
-        animationGroup.autoreverses = YES;
-        animationGroup.beginTime = beginTime;
-        animationGroup.repeatCount = HUGE_VALF;
-        animationGroup.duration = duration;
-        animationGroup.animations = @[tranformAnimation, opacityAnimation];
-        animationGroup.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+        animation.removedOnCompletion = NO;
+        animation.autoreverses = YES;
+        animation.beginTime = beginTime;
+        animation.repeatCount = HUGE_VALF;
+        animation.duration = duration;
+        animation.animations = @[tranformAnimation, opacityAnimation];
+        animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+        animation.removedOnCompletion = NO;
 
         [layer addSublayer:circle];
-        [circle addAnimation:animationGroup forKey:@"animation"];
+        [circle addAnimation:animation forKey:@"animation"];
     }
 }
 
