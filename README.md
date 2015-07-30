@@ -1,4 +1,4 @@
-# DGAc tivityIndicatorView
+# DGActivityIndicatorView
 DGActivityIndicatorView is a great way to make loading spinners in your application look nicer. It contains 6 different indicator view styles. Inspired by: http://connoratherton.com/loaders
 
 ![alt tag](https://github.com/ninjaprox/DGActivityIndicatorView/raw/master/DGActivityIndicatorView.gif)
