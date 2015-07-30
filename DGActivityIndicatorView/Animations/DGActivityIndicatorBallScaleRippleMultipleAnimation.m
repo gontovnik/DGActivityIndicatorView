@@ -38,6 +38,7 @@
     animation.duration = duration;
     animation.repeatCount = HUGE_VALF;
     animation.beginTime = CACurrentMediaTime();
+    animation.removedOnCompletion = NO;
     
     // Draw circles
     for (int i = 0; i < 3; i++) {

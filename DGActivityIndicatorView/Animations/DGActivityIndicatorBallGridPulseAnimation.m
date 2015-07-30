@@ -39,6 +39,7 @@
     animation.animations = @[scaleAnimation, opacityAnimation];
     animation.beginTime = CACurrentMediaTime();
     animation.repeatCount = HUGE_VALF;
+    animation.removedOnCompletion = NO;
     
     // Draw circle
     for (int i = 0; i < 3; i++) {

@@ -25,6 +25,7 @@
     animation.values = @[@1.0f, @0.5f, @1.0f];
     animation.timingFunctions = @[timingFunction, timingFunction];
     animation.repeatCount = HUGE_VALF;
+    animation.removedOnCompletion = NO;
     
     for (int i = 0; i < 4; i++) {
         CAShapeLayer *line = [CAShapeLayer layer];

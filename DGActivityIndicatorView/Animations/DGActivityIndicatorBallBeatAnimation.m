@@ -39,6 +39,7 @@
     animation.animations = @[scaleAnimation, opacityAnimation];
     animation.repeatCount = HUGE_VALF;
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    animation.removedOnCompletion = NO;
     
     // Draw circles
     for (int i = 0; i < 3; i++) {

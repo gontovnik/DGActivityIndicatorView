@@ -83,6 +83,7 @@
     animation.animations = @[scaleAnimation, rotateAnimation];
     animation.repeatCount = HUGE_VALF;
     animation.duration = duration;
+    animation.removedOnCompletion = NO;
     
     return animation;
 }

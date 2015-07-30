@@ -16,15 +16,16 @@
     
     // Small circle
     {
-        CAKeyframeAnimation *scaleAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+        CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
         
-        scaleAnimation.keyTimes = @[@0.0f, @0.3f, @1.0f];
-        scaleAnimation.values = @[[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0f, 1.0f, 1.0f)],
+        animation.keyTimes = @[@0.0f, @0.3f, @1.0f];
+        animation.values = @[[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0f, 1.0f, 1.0f)],
                                   [NSValue valueWithCATransform3D:CATransform3DMakeScale(0.3f, 0.3f, 1.0f)],
                                   [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0f, 1.0f, 1.0f)]];
-        scaleAnimation.duration = duration;
-        scaleAnimation.repeatCount = HUGE_VALF;
-        scaleAnimation.timingFunctions = @[timingFunction, timingFunction];
+        animation.duration = duration;
+        animation.repeatCount = HUGE_VALF;
+        animation.timingFunctions = @[timingFunction, timingFunction];
+        animation.removedOnCompletion = NO;
         
         CGFloat circleSize = size.width / 2;
         CALayer *circle = [CALayer layer];
@@ -32,7 +33,7 @@
         circle.frame = CGRectMake((layer.bounds.size.width - circleSize) / 2, (layer.bounds.size.height - circleSize) / 2, circleSize, circleSize);
         circle.backgroundColor = tintColor.CGColor;
         circle.cornerRadius = circleSize / 2;
-        [circle addAnimation:scaleAnimation forKey:@"animation"];
+        [circle addAnimation:animation forKey:@"animation"];
         [layer addSublayer:circle];
     }
     
@@ -62,6 +63,7 @@
         animation.animations = @[scaleAnimation, rotateAnimation];
         animation.duration = duration;
         animation.repeatCount = HUGE_VALF;
+        animation.removedOnCompletion = NO;
         
         // Draw big circle
         CGFloat circleSize = size.width;

@@ -28,6 +28,7 @@
     animation.timingFunctions = @[timingFunction, timingFunction];
     animation.duration = duration;
     animation.repeatCount = HUGE_VALF;
+    animation.removedOnCompletion = NO;
     
     for (int i = 0; i < 3; i++) {
         CALayer *circle = [CALayer layer];

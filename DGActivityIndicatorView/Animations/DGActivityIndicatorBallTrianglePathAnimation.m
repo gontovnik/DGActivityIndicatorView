@@ -26,6 +26,7 @@
     animation.duration = duration;
     animation.timingFunctions = @[timingFunction, timingFunction, timingFunction];
     animation.repeatCount = HUGE_VALF;
+    animation.removedOnCompletion = NO;
     
     // Top-center circle
     CALayer *topCenterCircle = [self createCircleWithSize:circleSize color:tintColor];

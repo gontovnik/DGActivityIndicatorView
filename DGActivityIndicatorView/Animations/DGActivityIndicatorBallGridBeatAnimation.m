@@ -27,6 +27,7 @@
     animation.values = @[@1.0f, @0.7f, @1.0f];
     animation.repeatCount = HUGE_VALF;
     animation.timingFunctions = @[timingFunction, timingFunction];
+    animation.removedOnCompletion = NO;
     
     // Draw circle
     for (int i = 0; i < 3; i++) {

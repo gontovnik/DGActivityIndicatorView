@@ -39,6 +39,7 @@
     animation.animations = @[scaleAnimation, rotateAnimation];
     animation.duration = duration;
     animation.repeatCount = HUGE_VALF;
+    animation.removedOnCompletion = NO;
     
     // Draw circles
     CALayer *leftCircle = [CALayer layer];

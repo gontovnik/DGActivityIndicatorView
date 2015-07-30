@@ -34,6 +34,7 @@
     animation.duration = duration;
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     animation.repeatCount = HUGE_VALF;
+    animation.removedOnCompletion = NO;
     
     // Draw circle
     CAShapeLayer *circle = [CAShapeLayer layer];

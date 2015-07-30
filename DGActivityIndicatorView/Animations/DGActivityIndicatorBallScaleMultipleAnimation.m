@@ -35,6 +35,7 @@
     animation.duration = duration;
     animation.repeatCount = HUGE_VALF;
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    animation.removedOnCompletion = NO;
     
     for (int i = 0; i < 3; i++) {
         CAShapeLayer *circle = [CAShapeLayer layer];

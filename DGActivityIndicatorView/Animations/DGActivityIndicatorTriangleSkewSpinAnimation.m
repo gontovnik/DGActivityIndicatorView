@@ -38,6 +38,7 @@
     animation.animations = @[rotationXAnimation, rotationYAnimation];
     animation.duration = duration;
     animation.repeatCount = HUGE_VALF;
+    animation.removedOnCompletion = NO;
     
     // Draw triangle
     CAShapeLayer *triangle = [CAShapeLayer layer];

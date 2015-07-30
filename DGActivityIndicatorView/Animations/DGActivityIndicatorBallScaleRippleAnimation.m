@@ -36,6 +36,7 @@
     animation.animations = @[scaleAnimation, opacityAnimation];
     animation.duration = duration;
     animation.repeatCount = HUGE_VALF;
+    animation.removedOnCompletion = NO;
     
     // Draw circle
     CAShapeLayer *circle = [CAShapeLayer layer];

@@ -28,6 +28,7 @@
     animation.values = @[@0.0f, @(deltaY), @(-deltaY), @0.0f];
     animation.timingFunctions = @[timingFunciton, timingFunciton, timingFunciton];
     animation.repeatCount = HUGE_VALF;
+    animation.removedOnCompletion = NO;
     
     // Draw circles
     for (int i = 0; i < 3; i++) {

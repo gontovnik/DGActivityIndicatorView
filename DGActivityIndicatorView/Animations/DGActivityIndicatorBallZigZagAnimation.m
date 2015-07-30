@@ -27,6 +27,7 @@
                           [NSValue valueWithCATransform3D:CATransform3DMakeTranslation(0, 0, 0)]];
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     animation.repeatCount = HUGE_VALF;
+    animation.removedOnCompletion = NO;
     
     // Draw circle 1
     {

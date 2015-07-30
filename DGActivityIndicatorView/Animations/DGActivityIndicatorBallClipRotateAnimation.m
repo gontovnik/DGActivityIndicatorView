@@ -34,6 +34,7 @@
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     animation.duration = duration;
     animation.repeatCount = HUGE_VALF;
+    animation.removedOnCompletion = NO;
     
     // Draw ball clip
     CAShapeLayer *circle = [CAShapeLayer layer];

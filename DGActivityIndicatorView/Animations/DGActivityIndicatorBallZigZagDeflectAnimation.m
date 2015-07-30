@@ -28,6 +28,7 @@
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     animation.repeatCount = HUGE_VALF;
     animation.autoreverses = true;
+    animation.removedOnCompletion = NO;
     
     // Draw circle 1
     {
