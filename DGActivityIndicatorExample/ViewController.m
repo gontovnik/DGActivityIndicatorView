@@ -17,11 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    
     self.view.backgroundColor = [UIColor colorWithRed:237/255.0f green:85/255.0f blue:101/255.0f alpha:1.0f];
     
-    NSArray *activityTypes = @[@(DGActivityIndicatorAnimationTypeNineDots), @(DGActivityIndicatorAnimationTypeTriplePulse),
-                               @(DGActivityIndicatorAnimationTypeFiveDots), @(DGActivityIndicatorAnimationTypeRotatingSquares),
-                               @(DGActivityIndicatorAnimationTypeDoubleBounce), @(DGActivityIndicatorAnimationTypeTwoDots),
+    NSArray *activityTypes = @[@(DGActivityIndicatorAnimationTypeNineDots),
+                               @(DGActivityIndicatorAnimationTypeTriplePulse),
+                               @(DGActivityIndicatorAnimationTypeFiveDots),
+                               @(DGActivityIndicatorAnimationTypeRotatingSquares),
+                               @(DGActivityIndicatorAnimationTypeDoubleBounce),
+                               @(DGActivityIndicatorAnimationTypeTwoDots),
                                @(DGActivityIndicatorAnimationTypeThreeDots),
                                @(DGActivityIndicatorAnimationTypeBallPulse),
                                @(DGActivityIndicatorAnimationTypeBallClipRotate),
@@ -51,10 +56,10 @@
 
     for (int i = 0; i < activityTypes.count; i++) {
         DGActivityIndicatorView *activityIndicatorView = [[DGActivityIndicatorView alloc] initWithType:(DGActivityIndicatorAnimationType)[activityTypes[i] integerValue] tintColor:[UIColor whiteColor]];
-        CGFloat width = self.view.bounds.size.width / 6.0f;
-        CGFloat height = self.view.bounds.size.height / 6.0f;
+        CGFloat width = self.view.bounds.size.width / 5.0f;
+        CGFloat height = self.view.bounds.size.height / 7.0f;
 
-        activityIndicatorView.frame = CGRectMake(width * (i % 6), height * (int)(i / 6), width, height);
+        activityIndicatorView.frame = CGRectMake(width * (i % 7), height * (int)(i / 7), width, height);
         [self.view addSubview:activityIndicatorView];
         [activityIndicatorView startAnimating];
     }
