@@ -52,7 +52,8 @@
                                @(DGActivityIndicatorAnimationTypeRotatingSandglass),
                                @(DGActivityIndicatorAnimationTypeRotatingTrigons),
                                @(DGActivityIndicatorAnimationTypeTripleRings),
-                               @(DGActivityIndicatorAnimationTypeCookieTerminator)];
+                               @(DGActivityIndicatorAnimationTypeCookieTerminator),
+                                @(DGActivityIndicatorAnimationTypeBallSpinFadeLoader)];
 
     for (int i = 0; i < activityTypes.count; i++) {
         DGActivityIndicatorView *activityIndicatorView = [[DGActivityIndicatorView alloc] initWithType:(DGActivityIndicatorAnimationType)[activityTypes[i] integerValue] tintColor:[UIColor whiteColor]];
