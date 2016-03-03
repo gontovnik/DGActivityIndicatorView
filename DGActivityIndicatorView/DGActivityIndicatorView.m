@@ -63,6 +63,8 @@ static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
         _type = type;
         _size = size;
         _tintColor = tintColor;
+        self.userInteractionEnabled = NO;
+        self.hidden = YES;
     }
     return self;
 }
@@ -85,6 +87,7 @@ static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
     if (!self.layer.sublayers) {
         [self setupAnimation];
     }
+    self.hidden = NO;
     self.layer.speed = 1.0f;
     _animating = YES;
 }
@@ -92,6 +95,7 @@ static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
 - (void)stopAnimating {
     self.layer.speed = 0.0f;
     _animating = NO;
+    self.hidden = YES;
 }
 
 #pragma mark -
