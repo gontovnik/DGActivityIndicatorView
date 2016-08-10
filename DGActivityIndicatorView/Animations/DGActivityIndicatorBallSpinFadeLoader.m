@@ -26,14 +26,14 @@
     
     NSArray *beginTimes = @[@0, @0.12, @0.24, @0.36, @0.48, @0.6, @0.72, @0.84];
     
-    CAKeyframeAnimation *scaleAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+    CAKeyframeAnimation *scaleAnimation = [self createKeyframeAnimationWithKeyPath:@"transform.scale"];
     
     scaleAnimation.keyTimes = @[@0, @0.5, @1];
     scaleAnimation.values = @[@1, @0.4, @1];
     scaleAnimation.duration = duration;
     
     
-    CAKeyframeAnimation *opacityAnimaton = [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
+    CAKeyframeAnimation *opacityAnimaton = [self createKeyframeAnimationWithKeyPath:@"opacity"];
     
     
     opacityAnimaton.keyTimes = @[@0, @0.5, @1];
@@ -43,12 +43,11 @@
     
     
     
-    CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
+    CAAnimationGroup *animationGroup = [self createAnimationGroup];;
     animationGroup.animations = @[scaleAnimation, opacityAnimaton];
     animationGroup.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     animationGroup.duration = duration;
     animationGroup.repeatCount = HUGE;
-    animationGroup.removedOnCompletion = NO;
     
     
     for (int i = 0; i < 8; i++) {

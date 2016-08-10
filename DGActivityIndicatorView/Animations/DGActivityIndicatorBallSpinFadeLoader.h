@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 mRocker. All rights reserved.
 //
 
-#import "DGActivityIndicatorAnimationProtocol.h"
+#import "DGActivityIndicatorAnimation.h"
 
-@interface DGActivityIndicatorBallSpinFadeLoader : NSObject<DGActivityIndicatorAnimationProtocol>
+@interface DGActivityIndicatorBallSpinFadeLoader : DGActivityIndicatorAnimation
 
 @end

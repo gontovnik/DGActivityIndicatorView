@@ -17,7 +17,7 @@
     CGFloat deltaY = size.height / 2 - circleSize / 2;
     
     // Circle 1 animation
-    CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+    CAKeyframeAnimation *animation = [self createKeyframeAnimationWithKeyPath:@"transform"];
     
     animation.duration = duration;
     animation.keyTimes = @[@0.0f, @0.33f, @0.66f, @1.0f];

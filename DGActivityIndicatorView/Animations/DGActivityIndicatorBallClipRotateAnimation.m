@@ -14,7 +14,7 @@
     CGFloat duration = 0.75f;
     
     //    Scale animation
-    CAKeyframeAnimation *scaleAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+    CAKeyframeAnimation *scaleAnimation = [self createKeyframeAnimationWithKeyPath:@"transform.scale"];
     
     scaleAnimation.values = @[[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0f, 1.0f, 1.0f)],
                               [NSValue valueWithCATransform3D:CATransform3DMakeScale(0.6f, 0.6f, 1.0f)],
@@ -22,13 +22,13 @@
     scaleAnimation.keyTimes = @[@0.0f, @0.5f, @1.0f];
     
     // Rotate animation
-    CAKeyframeAnimation *rotateAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation.z"];
+    CAKeyframeAnimation *rotateAnimation = [self createKeyframeAnimationWithKeyPath:@"transform.rotation.z"];
     
     rotateAnimation.values = @[@0, @M_PI, @(2 * M_PI)];
     rotateAnimation.keyTimes = scaleAnimation.keyTimes;
     
     // Animation
-    CAAnimationGroup *animation = [CAAnimationGroup animation];
+    CAAnimationGroup *animation = [self createAnimationGroup];;
     
     animation.animations = @[scaleAnimation, rotateAnimation];
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];

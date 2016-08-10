@@ -16,7 +16,7 @@
     
     // Small circle
     {
-        CAKeyframeAnimation *scaleAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+        CAKeyframeAnimation *scaleAnimation = [self createKeyframeAnimationWithKeyPath:@"transform.scale"];
         
         scaleAnimation.keyTimes = @[@0.0f, @0.3f, @1.0f];
         scaleAnimation.values = @[[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0f, 1.0f, 1.0f)],
@@ -39,7 +39,7 @@
     // Big circle
     {
         // Scale animation
-        CAKeyframeAnimation *scaleAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+        CAKeyframeAnimation *scaleAnimation = [self createKeyframeAnimationWithKeyPath:@"transform.scale"];
         
         scaleAnimation.keyTimes = @[@0.0f, @0.5f, @1.0f];
         scaleAnimation.values = @[[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0f, 1.0f, 1.0f)],
@@ -49,7 +49,7 @@
         scaleAnimation.timingFunctions = @[timingFunction, timingFunction];
         
         // Rotate animation
-        CAKeyframeAnimation *rotateAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation.z"];
+        CAKeyframeAnimation *rotateAnimation = [self createKeyframeAnimationWithKeyPath:@"transform.rotation.z"];
         
         rotateAnimation.values = @[@0, @M_PI, @(2 * M_PI)];
         rotateAnimation.keyTimes = scaleAnimation.keyTimes;
@@ -57,7 +57,7 @@
         rotateAnimation.timingFunctions = @[timingFunction, timingFunction];
         
         // Animation
-        CAAnimationGroup *animation = [CAAnimationGroup animation];
+        CAAnimationGroup *animation = [self createAnimationGroup];;
         
         animation.animations = @[scaleAnimation, rotateAnimation];
         animation.duration = duration;

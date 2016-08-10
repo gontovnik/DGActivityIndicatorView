@@ -20,21 +20,21 @@
     CGFloat y = (layer.bounds.size.height - size.height) / 2;
     
     // Scale animation
-    CAKeyframeAnimation *scaleAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+    CAKeyframeAnimation *scaleAnimation = [self createKeyframeAnimationWithKeyPath:@"transform.scale"];
     
     scaleAnimation.keyTimes = @[@0.0f, @0.5f, @1.0f];
     scaleAnimation.values = @[@1.0f, @0.5f, @1.0f];
     scaleAnimation.timingFunctions = @[timingFunction, timingFunction];
 
     // Animation
-    CAKeyframeAnimation *opacityAnimation = [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
+    CAKeyframeAnimation *opacityAnimation = [self createKeyframeAnimationWithKeyPath:@"opacity"];
     
     opacityAnimation.keyTimes = @[@0.0f, @0.5f, @1.0f];
     opacityAnimation.values = @[@1.0f, @0.7f, @1.0f];
     opacityAnimation.timingFunctions = @[timingFunction, timingFunction];
     
     // Animation
-    CAAnimationGroup *animation = [CAAnimationGroup animation];
+    CAAnimationGroup *animation = [self createAnimationGroup];;
     
     animation.animations = @[scaleAnimation, opacityAnimation];
     animation.beginTime = CACurrentMediaTime();

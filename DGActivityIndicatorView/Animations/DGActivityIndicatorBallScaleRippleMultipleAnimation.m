@@ -16,7 +16,7 @@
     NSArray *timeOffsets = @[@0.0f, @0.2f, @0.4f];
     
     // Scale animation
-    CAKeyframeAnimation *scaleAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+    CAKeyframeAnimation *scaleAnimation = [self createKeyframeAnimationWithKeyPath:@"transform.scale"];
     
     scaleAnimation.duration = duration;
     scaleAnimation.keyTimes = @[@0.0f, @0.7f];
@@ -24,7 +24,7 @@
     scaleAnimation.timingFunction = timingFunction;
     
     // Opacity animation
-    CAKeyframeAnimation *opacityAnimation = [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
+    CAKeyframeAnimation *opacityAnimation = [self createKeyframeAnimationWithKeyPath:@"opacity"];
     
     opacityAnimation.duration = duration;
     opacityAnimation.keyTimes = @[@0.0f, @0.7f, @1.0f];
@@ -32,7 +32,7 @@
     opacityAnimation.timingFunctions = @[timingFunction, timingFunction];
     
     // Animation
-    CAAnimationGroup *animation = [CAAnimationGroup animation];
+    CAAnimationGroup *animation = [self createAnimationGroup];;
     
     animation.animations = @[scaleAnimation, opacityAnimation];
     animation.duration = duration;

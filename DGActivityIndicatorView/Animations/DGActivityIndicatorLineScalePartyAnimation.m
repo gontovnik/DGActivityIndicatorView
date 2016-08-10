@@ -19,7 +19,7 @@
     CGFloat y = (layer.bounds.size.height - size.height) / 2;
     
     // Animation
-    CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+    CAKeyframeAnimation *animation = [self createKeyframeAnimationWithKeyPath:@"transform.scale"];
     
     animation.keyTimes = @[@0.0f, @0.5f, @1.0f];
     animation.values = @[@1.0f, @0.5f, @1.0f];

@@ -17,7 +17,7 @@
     CAMediaTimingFunction *timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.09f :0.57f :0.49f :0.9f];
     
     // Rotation x animation
-    CAKeyframeAnimation *rotationXAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation.x"];
+    CAKeyframeAnimation *rotationXAnimation = [self createKeyframeAnimationWithKeyPath:@"transform.rotation.x"];
     
     rotationXAnimation.duration = duration;
     rotationXAnimation.keyTimes = @[@0.0f, @0.25f, @0.5f, @0.75f, @1.0f];
@@ -25,7 +25,7 @@
     rotationXAnimation.timingFunctions = @[timingFunction, timingFunction, timingFunction, timingFunction];
     
     // Rotation x animation
-    CAKeyframeAnimation *rotationYAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation.y"];
+    CAKeyframeAnimation *rotationYAnimation = [self createKeyframeAnimationWithKeyPath:@"transform.rotation.y"];
     
     rotationYAnimation.duration = duration;
     rotationYAnimation.keyTimes = @[@0.0f, @0.25f, @0.5f, @0.75f, @1.0f];
@@ -33,7 +33,7 @@
     rotationYAnimation.timingFunctions = @[timingFunction, timingFunction, timingFunction, timingFunction];
     
     // Animation
-    CAAnimationGroup *animation = [CAAnimationGroup animation];
+    CAAnimationGroup *animation = [self createAnimationGroup];;
     
     animation.animations = @[rotationXAnimation, rotationYAnimation];
     animation.duration = duration;

@@ -38,8 +38,7 @@
         circle.shouldRasterize = YES;
         circle.rasterizationScale = [[UIScreen mainScreen] scale];
         
-        CAKeyframeAnimation *transformAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
-        transformAnimation.removedOnCompletion = NO;
+        CAKeyframeAnimation *transformAnimation = [self createKeyframeAnimationWithKeyPath:@"transform"];
         transformAnimation.repeatCount = HUGE_VALF;
         transformAnimation.duration = 2.0f;
         transformAnimation.beginTime = beginTime - (i * transformAnimation.duration / 3.0f);;

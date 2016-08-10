@@ -37,16 +37,15 @@
         circle.opacity = 1.0f;
         circle.cornerRadius = circle.bounds.size.height / 2.0f;
         
-        CAKeyframeAnimation *transformAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+        CAKeyframeAnimation *transformAnimation = [self createKeyframeAnimationWithKeyPath:@"transform"];
         transformAnimation.values = @[[NSValue valueWithCATransform3D:CATransform3DMakeScale(0.5f, 0.5f, 0.0f)],
                                       [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0f, 1.0f, 0.0f)],
                                       [NSValue valueWithCATransform3D:CATransform3DMakeScale(0.5f, 0.5f, 0.0f)]];
         
-        CAKeyframeAnimation *opacityAnimation = [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
+        CAKeyframeAnimation *opacityAnimation = [self createKeyframeAnimationWithKeyPath:@"opacity"];
         opacityAnimation.values = @[@(0.5f), @(1.0f), @(0.5f)];
         
-        CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
-        animationGroup.removedOnCompletion = NO;
+        CAAnimationGroup *animationGroup = [self createAnimationGroup];;
         animationGroup.beginTime = beginTime;
         animationGroup.repeatCount = HUGE_VALF;
         animationGroup.duration = [durations[i] doubleValue];

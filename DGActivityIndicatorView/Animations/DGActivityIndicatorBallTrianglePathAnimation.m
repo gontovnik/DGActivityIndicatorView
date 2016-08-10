@@ -20,7 +20,7 @@
     CAMediaTimingFunction *timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     
     // Animation
-    CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+    CAKeyframeAnimation *animation = [self createKeyframeAnimationWithKeyPath:@"transform"];
     
     animation.keyTimes = @[@0.0f, @0.33f, @0.66f, @1.0f];
     animation.duration = duration;

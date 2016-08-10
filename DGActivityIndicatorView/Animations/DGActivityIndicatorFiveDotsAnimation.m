@@ -43,13 +43,12 @@
         CATransform3D t5 = CATransform3DMakeTranslation(0.0f, 0.0f, 0.0f);
         t5 = CATransform3DScale(t5, 1.f, 1.0f, 0.0f);
         
-        CAKeyframeAnimation *transformAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+        CAKeyframeAnimation *transformAnimation = [self createKeyframeAnimationWithKeyPath:@"transform"];
         transformAnimation.values = @[[NSValue valueWithCATransform3D:t1],
                                       [NSValue valueWithCATransform3D:t2],
                                       [NSValue valueWithCATransform3D:t3],
                                       [NSValue valueWithCATransform3D:t4],
                                       [NSValue valueWithCATransform3D:t5]];
-        transformAnimation.removedOnCompletion = NO;
         transformAnimation.beginTime = beginTime;
         transformAnimation.repeatCount = HUGE_VALF;
         transformAnimation.duration = 1.0f;
@@ -79,13 +78,12 @@
         CATransform3D t4 = CATransform3DMakeTranslation(0.0f, 0.0f, 0.0f);
         t4 = CATransform3DScale(t4, 0.3f, 0.3f, 0.0f);
         
-        CAKeyframeAnimation *transformAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+        CAKeyframeAnimation *transformAnimation = [self createKeyframeAnimationWithKeyPath:@"transform"];
         transformAnimation.values = @[[NSValue valueWithCATransform3D:t1],
                                       [NSValue valueWithCATransform3D:t2],
                                       [NSValue valueWithCATransform3D:t3],
                                       [NSValue valueWithCATransform3D:t4]];
         transformAnimation.keyTimes = @[@(0.0f), @(0.25f), @(0.75f), @(1.0f)];
-        transformAnimation.removedOnCompletion = NO;
         transformAnimation.beginTime = beginTime;
         transformAnimation.repeatCount = HUGE_VALF;
         transformAnimation.duration = 1.0f;

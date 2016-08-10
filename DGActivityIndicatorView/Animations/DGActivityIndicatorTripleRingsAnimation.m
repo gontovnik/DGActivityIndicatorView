@@ -29,20 +29,19 @@
         circle.opacity = 1.0f;
         circle.transform = CATransform3DMakeScale(0.0f, 0.0f, 0.0f);
         
-        CABasicAnimation *transformAnimation = [CABasicAnimation animationWithKeyPath:@"transform"];
+        CABasicAnimation *transformAnimation = [self createBasicAnimationWithKeyPath:@"transform"];
         transformAnimation.duration = 2.0f - i * 0.4f;
         transformAnimation.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeScale(0.1f, 0.1f, 0.0f)];
         transformAnimation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0f, 1.0f, 0.0f)];
         transformAnimation.timingFunction = [CAMediaTimingFunction functionWithName: kCAMediaTimingFunctionEaseOut];
         
-        CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+        CABasicAnimation *opacityAnimation = [self createBasicAnimationWithKeyPath:@"opacity"];
         opacityAnimation.duration = transformAnimation.duration;
         opacityAnimation.fromValue = @(1.0f);
         opacityAnimation.toValue = @(0.8f);
         opacityAnimation.timingFunction = [CAMediaTimingFunction functionWithName: kCAMediaTimingFunctionEaseOut];
         
-        CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
-        animationGroup.removedOnCompletion = NO;
+        CAAnimationGroup *animationGroup = [self createAnimationGroup];;
         animationGroup.beginTime = beginTime + i * 0.4f;
         animationGroup.repeatCount = HUGE_VALF;
         animationGroup.duration = 2.0f;

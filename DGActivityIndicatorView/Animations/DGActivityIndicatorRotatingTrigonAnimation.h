@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 Danil Gontovnik. All rights reserved.
 //
 
-#import "DGActivityIndicatorAnimationProtocol.h"
+#import "DGActivityIndicatorAnimation.h"
 
-@interface DGActivityIndicatorRotatingTrigonAnimation : NSObject <DGActivityIndicatorAnimationProtocol>
+@interface DGActivityIndicatorRotatingTrigonAnimation: DGActivityIndicatorAnimation
 
 
 @end

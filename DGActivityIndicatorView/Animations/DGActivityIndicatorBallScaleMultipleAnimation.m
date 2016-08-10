@@ -15,21 +15,21 @@
     NSArray *beginTimes = @[@0.0f, @0.2f, @0.4f];
     
     // Scale animation
-    CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    CABasicAnimation *scaleAnimation = [self createBasicAnimationWithKeyPath:@"transform.scale"];
     
     scaleAnimation.duration = duration;
     scaleAnimation.fromValue = @0.0f;
     scaleAnimation.toValue = @1.0f;
     
     // Opacity animation
-    CAKeyframeAnimation *opacityAnimation = [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
+    CAKeyframeAnimation *opacityAnimation = [self createKeyframeAnimationWithKeyPath:@"opacity"];
     
     opacityAnimation.duration = duration;
     opacityAnimation.keyTimes = @[@0.0f, @0.05f, @1.0f];
     opacityAnimation.values = @[@0.0f, @1.0f, @0.0f];
     
     // Animation
-    CAAnimationGroup *animation = [CAAnimationGroup animation];
+    CAAnimationGroup *animation = [self createAnimationGroup];;
     
     animation.animations = @[scaleAnimation, opacityAnimation];
     animation.duration = duration;

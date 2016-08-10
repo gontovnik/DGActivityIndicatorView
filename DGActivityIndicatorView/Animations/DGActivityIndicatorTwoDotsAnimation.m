@@ -25,8 +25,7 @@
         circle.transform = CATransform3DMakeScale(0.0f, 0.0f, 0.0f);
         circle.backgroundColor = tintColor.CGColor;
         
-        CAKeyframeAnimation *transformAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
-        transformAnimation.removedOnCompletion = NO;
+        CAKeyframeAnimation *transformAnimation = [self createKeyframeAnimationWithKeyPath:@"transform"];
         transformAnimation.repeatCount = HUGE_VALF;
         transformAnimation.duration = 1.8f;
         transformAnimation.beginTime = beginTime - (transformAnimation.duration / 2.0f * i);

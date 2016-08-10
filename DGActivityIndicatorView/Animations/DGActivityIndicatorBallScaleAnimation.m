@@ -14,21 +14,21 @@
     CGFloat duration = 1.0f;
     
     // Scale animation
-    CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    CABasicAnimation *scaleAnimation = [self createBasicAnimationWithKeyPath:@"transform.scale"];
     
     scaleAnimation.duration = duration;
     scaleAnimation.fromValue = @0.0f;
     scaleAnimation.toValue = @1.0f;
     
     // Opacity animation
-    CABasicAnimation *opacityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    CABasicAnimation *opacityAnimation = [self createBasicAnimationWithKeyPath:@"opacity"];
     
     opacityAnimation.duration = duration;
     opacityAnimation.fromValue = @1.0f;
     opacityAnimation.toValue = @0.0f;
     
     // Animation
-    CAAnimationGroup *animation = [CAAnimationGroup animation];
+    CAAnimationGroup *animation = [self createAnimationGroup];;
     
     animation.animations = @[scaleAnimation, opacityAnimation];
     animation.duration = duration;

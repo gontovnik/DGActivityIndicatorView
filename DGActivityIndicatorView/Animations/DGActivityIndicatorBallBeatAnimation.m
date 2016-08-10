@@ -19,21 +19,21 @@
     CGFloat y = (layer.bounds.size.height - circleSize) / 2;
     
     // Scale animation
-    CAKeyframeAnimation *scaleAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+    CAKeyframeAnimation *scaleAnimation = [self createKeyframeAnimationWithKeyPath:@"transform.scale"];
     
     scaleAnimation.duration = duration;
     scaleAnimation.keyTimes = @[@0.0f, @0.5f, @1.0f];
     scaleAnimation.values = @[@1.0f, @0.75f, @1.0f];
     
     // Opacity animation
-    CAKeyframeAnimation *opacityAnimation = [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
+    CAKeyframeAnimation *opacityAnimation = [self createKeyframeAnimationWithKeyPath:@"opacity"];
     
     opacityAnimation.duration = duration;
     opacityAnimation.keyTimes = @[@0.0f, @0.5f, @1.0f];
     opacityAnimation.values = @[@1.0f, @0.2f, @1.0f];
     
     // Aniamtion
-    CAAnimationGroup *animation = [CAAnimationGroup animation];
+    CAAnimationGroup *animation = [self createAnimationGroup];;
     
     animation.duration = duration;
     animation.animations = @[scaleAnimation, opacityAnimation];

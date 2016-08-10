@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Danil Gontovnik. All rights reserved.
 //
 
-#import "DGActivityIndicatorAnimationProtocol.h"
+#import "DGActivityIndicatorAnimation.h"
 
-@interface DGActivityIndicatorLineScaleAnimation : NSObject <DGActivityIndicatorAnimationProtocol>
+@interface DGActivityIndicatorLineScaleAnimation: DGActivityIndicatorAnimation
 
 @end

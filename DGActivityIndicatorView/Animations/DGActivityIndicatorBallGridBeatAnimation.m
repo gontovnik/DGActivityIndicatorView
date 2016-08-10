@@ -20,7 +20,7 @@
     CGFloat y = (layer.bounds.size.height - size.height) / 2;
     
     // Animation
-    CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
+    CAKeyframeAnimation *animation = [self createKeyframeAnimationWithKeyPath:@"opacity"];
     
     animation.beginTime = CACurrentMediaTime();
     animation.keyTimes = @[@0.0f, @0.5f, @1.0f];
