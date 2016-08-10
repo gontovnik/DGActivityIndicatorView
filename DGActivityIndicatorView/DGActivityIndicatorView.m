@@ -44,10 +44,26 @@
 
 static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
 
+@interface DGActivityIndicatorView () {
+    CALayer *_animationLayer;
+}
+
+@end
+
 @implementation DGActivityIndicatorView
 
 #pragma mark -
 #pragma mark Constructors
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        _tintColor = [UIColor whiteColor];
+        _size = kDGActivityIndicatorDefaultSize;
+        [self commonInit];
+    }
+    return self;
+}
 
 - (id)initWithType:(DGActivityIndicatorAnimationType)type {
     return [self initWithType:type tintColor:[UIColor whiteColor] size:kDGActivityIndicatorDefaultSize];
@@ -63,8 +79,7 @@ static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
         _type = type;
         _size = size;
         _tintColor = tintColor;
-        self.userInteractionEnabled = NO;
-        self.hidden = YES;
+        [self commonInit];
     }
     return self;
 }
@@ -72,28 +87,36 @@ static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
 #pragma mark -
 #pragma mark Methods
 
+- (void)commonInit {
+    self.userInteractionEnabled = NO;
+    self.hidden = YES;
+    
+    _animationLayer = [[CALayer alloc] init];
+    [self.layer addSublayer:_animationLayer];
+}
+
 - (void)setupAnimation {
-    self.layer.sublayers = nil;
+    _animationLayer.sublayers = nil;
     
     id<DGActivityIndicatorAnimationProtocol> animation = [DGActivityIndicatorView activityIndicatorAnimationForAnimationType:_type];
     
     if ([animation respondsToSelector:@selector(setupAnimationInLayer:withSize:tintColor:)]) {
-        [animation setupAnimationInLayer:self.layer withSize:CGSizeMake(_size, _size) tintColor:_tintColor];
-        self.layer.speed = 0.0f;
+        [animation setupAnimationInLayer:_animationLayer withSize:CGSizeMake(_size, _size) tintColor:_tintColor];
+        _animationLayer.speed = 0.0f;
     }
 }
 
 - (void)startAnimating {
-    if (!self.layer.sublayers) {
+    if (!_animationLayer.sublayers) {
         [self setupAnimation];
     }
     self.hidden = NO;
-    self.layer.speed = 1.0f;
+    _animationLayer.speed = 1.0f;
     _animating = YES;
 }
 
 - (void)stopAnimating {
-    self.layer.speed = 0.0f;
+    _animationLayer.speed = 0.0f;
     _animating = NO;
     self.hidden = YES;
 }
@@ -121,8 +144,15 @@ static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
     if (![_tintColor isEqual:tintColor]) {
         _tintColor = tintColor;
         
-        for (CALayer *sublayer in self.layer.sublayers) {
-            sublayer.backgroundColor = tintColor.CGColor;
+        CGColorRef tintColorRef = tintColor.CGColor;
+        for (CALayer *sublayer in _animationLayer.sublayers) {
+            sublayer.backgroundColor = tintColorRef;
+            
+            if ([sublayer isKindOfClass:[CAShapeLayer class]]) {
+                CAShapeLayer *shapeLayer = [[CAShapeLayer alloc] init];
+                shapeLayer.strokeColor = tintColorRef;
+                shapeLayer.fillColor = tintColorRef;
+            }
         }
     }
 }
@@ -200,6 +230,21 @@ static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
             return [[DGActivityIndicatorBallSpinFadeLoader alloc] init];
     }
     return nil;
+}
+
+#pragma mark -
+#pragma mark Layout
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    _animationLayer.frame = self.bounds;
+    
+    if (_animating) {
+        [self stopAnimating];
+        [self setupAnimation];
+        [self startAnimating];
+    }
 }
 
 @end
