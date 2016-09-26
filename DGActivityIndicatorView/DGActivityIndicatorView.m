@@ -65,15 +65,15 @@ static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
     return self;
 }
 
-- (id)initWithType:(DGActivityIndicatorAnimationType)type {
+- (instancetype)initWithType:(DGActivityIndicatorAnimationType)type {
     return [self initWithType:type tintColor:[UIColor whiteColor] size:kDGActivityIndicatorDefaultSize];
 }
 
-- (id)initWithType:(DGActivityIndicatorAnimationType)type tintColor:(UIColor *)tintColor {
+- (instancetype)initWithType:(DGActivityIndicatorAnimationType)type tintColor:(UIColor *)tintColor {
     return [self initWithType:type tintColor:tintColor size:kDGActivityIndicatorDefaultSize];
 }
 
-- (id)initWithType:(DGActivityIndicatorAnimationType)type tintColor:(UIColor *)tintColor size:(CGFloat)size {
+- (instancetype)initWithType:(DGActivityIndicatorAnimationType)type tintColor:(UIColor *)tintColor size:(CGFloat)size {
     self = [super init];
     if (self) {
         _type = type;
