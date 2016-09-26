@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "05257D9A1B10E796006354A6"
-               BuildableName = "DGActivityIndicatorExample.app"
-               BlueprintName = "DGActivityIndicatorExample"
-               ReferencedContainer = "container:DGActivityIndicatorExample.xcodeproj">
+               BuildableName = "Example.app"
+               BlueprintName = "Example"
+               ReferencedContainer = "container:DGActivityIndicator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,24 +28,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "05257DB31B10E796006354A6"
-               BuildableName = "DGActivityIndicatorExampleTests.xctest"
-               BlueprintName = "DGActivityIndicatorExampleTests"
-               ReferencedContainer = "container:DGActivityIndicatorExample.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "05257D9A1B10E796006354A6"
-            BuildableName = "DGActivityIndicatorExample.app"
-            BlueprintName = "DGActivityIndicatorExample"
-            ReferencedContainer = "container:DGActivityIndicatorExample.xcodeproj">
+            BuildableName = "Example.app"
+            BlueprintName = "Example"
+            ReferencedContainer = "container:DGActivityIndicator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "05257D9A1B10E796006354A6"
-            BuildableName = "DGActivityIndicatorExample.app"
-            BlueprintName = "DGActivityIndicatorExample"
-            ReferencedContainer = "container:DGActivityIndicatorExample.xcodeproj">
+            BuildableName = "Example.app"
+            BlueprintName = "Example"
+            ReferencedContainer = "container:DGActivityIndicator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "05257D9A1B10E796006354A6"
-            BuildableName = "DGActivityIndicatorExample.app"
-            BlueprintName = "DGActivityIndicatorExample"
-            ReferencedContainer = "container:DGActivityIndicatorExample.xcodeproj">
+            BuildableName = "Example.app"
+            BlueprintName = "Example"
+            ReferencedContainer = "container:DGActivityIndicator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
