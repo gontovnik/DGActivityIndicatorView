@@ -84,6 +84,7 @@
 		21387E661D990DF9000D3F13 /* DGActivityIndicatorTriplePulseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 21387DB41D990D17000D3F13 /* DGActivityIndicatorTriplePulseAnimation.m */; };
 		21387E671D990DF9000D3F13 /* DGActivityIndicatorTripleRingsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 21387DB61D990D17000D3F13 /* DGActivityIndicatorTripleRingsAnimation.m */; };
 		21387E681D990DF9000D3F13 /* DGActivityIndicatorTwoDotsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 21387DB81D990D17000D3F13 /* DGActivityIndicatorTwoDotsAnimation.m */; };
+		21387E6A1D990E83000D3F13 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21387E691D990E83000D3F13 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +193,7 @@
 		21387DC31D990D17000D3F13 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		21387DF11D990D3E000D3F13 /* DGActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DGActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21387E451D990D8E000D3F13 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21387E691D990E83000D3F13 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,6 +330,7 @@
 				21387DC11D990D17000D3F13 /* main.m */,
 				21387DC21D990D17000D3F13 /* ViewController.h */,
 				21387DC31D990D17000D3F13 /* ViewController.m */,
+				21387E691D990E83000D3F13 /* Launch Screen.storyboard */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21387E6A1D990E83000D3F13 /* Launch Screen.storyboard in Resources */,
 				21387DE81D990D17000D3F13 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,7 +630,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -640,7 +643,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
