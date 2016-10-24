@@ -44,14 +44,16 @@ typedef NS_ENUM(NSUInteger, DGActivityIndicatorAnimationType) {
     DGActivityIndicatorAnimationTypeBallSpinFadeLoader
 };
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface DGActivityIndicatorView : UIView
 
-- (id)initWithType:(DGActivityIndicatorAnimationType)type;
-- (id)initWithType:(DGActivityIndicatorAnimationType)type tintColor:(UIColor *)tintColor;
-- (id)initWithType:(DGActivityIndicatorAnimationType)type tintColor:(UIColor *)tintColor size:(CGFloat)size;
+- (instancetype)initWithType:(DGActivityIndicatorAnimationType)type;
+- (instancetype)initWithType:(DGActivityIndicatorAnimationType)type tintColor:(UIColor *)tintColor;
+- (instancetype)initWithType:(DGActivityIndicatorAnimationType)type tintColor:(UIColor *)tintColor size:(CGFloat)size;
 
 @property (nonatomic) DGActivityIndicatorAnimationType type;
-@property (nonatomic, strong) UIColor *tintColor;
+@property (nonatomic) UIColor *tintColor;
 @property (nonatomic) CGFloat size;
 
 @property (nonatomic, readonly) BOOL animating;
@@ -60,3 +62,5 @@ typedef NS_ENUM(NSUInteger, DGActivityIndicatorAnimationType) {
 - (void)stopAnimating;
 
 @end
+
+NS_ASSUME_NONNULL_END

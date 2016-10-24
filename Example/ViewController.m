@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-
-#import "DGActivityIndicatorView.h"
+#import <DGActivityIndicatorView/DGActivityIndicatorView.h>
 
 @implementation ViewController
 
