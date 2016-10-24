@@ -41,7 +41,8 @@ typedef NS_ENUM(NSUInteger, DGActivityIndicatorAnimationType) {
     DGActivityIndicatorAnimationTypeRotatingTrigons,
     DGActivityIndicatorAnimationTypeTripleRings,
     DGActivityIndicatorAnimationTypeCookieTerminator,
-    DGActivityIndicatorAnimationTypeBallSpinFadeLoader
+    DGActivityIndicatorAnimationTypeBallSpinFadeLoader,
+    DGActivityIndicatorAnimationTypeClock,
 };
 
 @interface DGActivityIndicatorView : UIView

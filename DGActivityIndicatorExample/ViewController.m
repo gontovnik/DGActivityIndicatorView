@@ -53,14 +53,13 @@
                                @(DGActivityIndicatorAnimationTypeRotatingTrigons),
                                @(DGActivityIndicatorAnimationTypeTripleRings),
                                @(DGActivityIndicatorAnimationTypeCookieTerminator),
-                               @(DGActivityIndicatorAnimationTypeBallSpinFadeLoader)];
+                               @(DGActivityIndicatorAnimationTypeBallSpinFadeLoader),
+                               @(DGActivityIndicatorAnimationTypeClock)];
 
     for (int i = 0; i < activityTypes.count; i++) {
         DGActivityIndicatorView *activityIndicatorView = [[DGActivityIndicatorView alloc] initWithType:(DGActivityIndicatorAnimationType)[activityTypes[i] integerValue] tintColor:[UIColor whiteColor]];
         CGFloat width = self.view.bounds.size.width / 5.0f;
-        CGFloat height = self.view.bounds.size.height / 7.0f;
-
-        activityIndicatorView.frame = CGRectMake(width * (i % 7), height * (int)(i / 7), width, height);
+        activityIndicatorView.frame = CGRectMake(width * (i % 5), width * (int)(i / 5), width, width);
         [self.view addSubview:activityIndicatorView];
         [activityIndicatorView startAnimating];
     }
