@@ -243,12 +243,16 @@ static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
     [super layoutSubviews];
     
     _animationLayer.frame = self.bounds;
-    
-    if (_animating) {
+
+    BOOL animating = _animating;
+
+    if (animating)
         [self stopAnimating];
-        [self setupAnimation];
+
+    [self setupAnimation];
+
+    if (animating)
         [self startAnimating];
-    }
 }
 
 - (CGSize)intrinsicContentSize {
