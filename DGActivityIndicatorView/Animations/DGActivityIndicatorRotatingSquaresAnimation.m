@@ -30,8 +30,7 @@ static CGFloat degreesToRadians(CGFloat degrees) { return (degrees) / 180.0 * M_
         square.shouldRasterize = YES;
         square.rasterizationScale = [[UIScreen mainScreen] scale];
         
-        CAKeyframeAnimation *transformAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
-        transformAnimation.removedOnCompletion = NO;
+        CAKeyframeAnimation *transformAnimation = [self createKeyframeAnimationWithKeyPath:@"transform"];
         transformAnimation.duration = 1.6f;
         transformAnimation.beginTime = beginTime - (i * transformAnimation.duration / 2.0f);
         transformAnimation.repeatCount = HUGE_VALF;

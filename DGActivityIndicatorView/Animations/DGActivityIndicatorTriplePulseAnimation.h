@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Danil Gontovnik. All rights reserved.
 //
 
-#import "DGActivityIndicatorAnimationProtocol.h"
+#import "DGActivityIndicatorAnimation.h"
 
-@interface DGActivityIndicatorTriplePulseAnimation : NSObject <DGActivityIndicatorAnimationProtocol>
+@interface DGActivityIndicatorTriplePulseAnimation: DGActivityIndicatorAnimation
 
 @end
