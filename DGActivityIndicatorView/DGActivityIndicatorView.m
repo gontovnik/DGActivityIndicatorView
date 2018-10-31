@@ -147,17 +147,7 @@ static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
 - (void)setTintColor:(UIColor *)tintColor {
     if (![_tintColor isEqual:tintColor]) {
         _tintColor = tintColor;
-        
-        CGColorRef tintColorRef = tintColor.CGColor;
-        for (CALayer *sublayer in _animationLayer.sublayers) {
-            sublayer.backgroundColor = tintColorRef;
-            
-            if ([sublayer isKindOfClass:[CAShapeLayer class]]) {
-                CAShapeLayer *shapeLayer = [[CAShapeLayer alloc] init];
-                shapeLayer.strokeColor = tintColorRef;
-                shapeLayer.fillColor = tintColorRef;
-            }
-        }
+        [self setupAnimation];
     }
 }
 
