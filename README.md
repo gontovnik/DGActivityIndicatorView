@@ -36,6 +36,41 @@ Call 'pod install':
 pod install
 ```
 
+### Swift Package Manager
+
+
+Add te dependency to your `Package.swift` and use in your target
+``` swift
+dependencies: [
+    .package(url: "https://github.com/gontovnik/DGActivityIndicatorView.git", .upToNextMajor(from: "2.2.0"))
+]
+```
+
+Sample `Package.swift`
+
+``` swift
+let package = Package(
+    name: "YourDependency",
+    products: [
+        .library(
+            name: "YourDependency",
+            targets: ["YourDependency"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/gontovnik/DGActivityIndicatorView.git", .upToNextMajor(from: "2.2.0")),
+    ],
+    targets: [
+        .target(
+            name: "YourDependency",
+            dependencies: [
+                "DGActivityIndicatorView"
+            ]
+        ),
+    ]
+)
+```
+
+
 ### Manual install
 
 All you need to do is drop DGActivityIndicatorView folder into your project and include headers.
