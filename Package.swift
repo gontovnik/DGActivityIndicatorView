@@ -18,10 +18,7 @@ let package = Package(
         .target(
             name: "DGActivityIndicatorView",
             path: "DGActivityIndicatorView",
-            publicHeadersPath: "",
-            cSettings: [
-                .headerSearchPath("Animations"),
-                  ]
+            publicHeadersPath: ""
         ),
     ]
 )
